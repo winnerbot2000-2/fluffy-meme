@@ -1,0 +1,24 @@
+{
+  "name": "ap-microeconomics-ai-study-guide",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@11.9.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w @apmicro/web\" \"npm run dev:api\"",
+    "dev:web": "npm run dev -w @apmicro/web",
+    "dev:api": "uvicorn app.main:app --reload --app-dir apps/api",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "concurrently": "^9.1.2",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2"
+  }
+}

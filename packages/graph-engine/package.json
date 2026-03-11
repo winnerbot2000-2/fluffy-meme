@@ -1,0 +1,26 @@
+{
+  "name": "@apmicro/graph-engine",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "echo graph-engine source-only package",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo graph-engine lint"
+  },
+  "dependencies": {
+    "@apmicro/shared-types": "*",
+    "d3-scale": "^4.0.2",
+    "d3-shape": "^3.2.0",
+    "framer-motion": "^12.4.7"
+  },
+  "devDependencies": {
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-shape": "^3.1.7"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@apmicro/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@apmicro/content-core": "*",
+    "@apmicro/graph-engine": "*",
+    "@apmicro/shared-types": "*",
+    "@apmicro/ui": "*",
+    "framer-motion": "^12.4.7",
+    "lucide-react": "^0.484.0",
+    "next": "^15.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
+  }
+}
