@@ -9,8 +9,11 @@ coverage
 .venv
 __pycache__
 *.pyc
+*.tsbuildinfo
+*.pdf
 apps/api/.data
 apps/api/uploads
+apps/api/apps
 apps/api/apmicro.db
 .env
 .env.local
